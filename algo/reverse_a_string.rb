@@ -3,7 +3,17 @@
 # comes with Ruby!
 
 def reverse_a_string(string)
+	string = string
+	array = string.split(//)
+	i = 1
+	l = array.length
+	backwards = []
+	l.times do 
+		backwards << array[l - i] 
+		i += 1
+	end
 
+	p backwards.join
 end
 
 # Driver code - don't touch anything below this line.
